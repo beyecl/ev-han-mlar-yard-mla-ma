@@ -1,0 +1,3 @@
+ilan ekleyi ekledim ondaa sorun var
+ ilan ekle html ian ekle js bağlamadım
+ my-ads jsde script js ayırdım 

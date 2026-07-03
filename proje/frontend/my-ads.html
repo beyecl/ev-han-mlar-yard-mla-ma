@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İlanlarım</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- İlan yoksa gösterilecek alan -->
+<div id="no-ads" style="display:none; text-align:center; margin-top:50px;">
+    <h2>Henüz ilanınız yok</h2>
+    <p>Hemen ilk ilanınızı oluşturun</p>
+    <button onclick="goToAddAd()">İlan Ekle</button>
+</div>
+
+<!-- İlan varsa gösterilecek alan -->
+<div id="ads-list" style="display:none;">
+    <div class="ad-card">İlan 1</div>
+    <div class="ad-card">İlan 2</div>
+</div>
+
+<script>
+    // Normalde bu veri backend’den gelir
+    const myAds = []; // ilan yoksa boş, varsa dolu olur
+
+    const noAdsDiv = document.getElementById("no-ads");
+    const adsListDiv = document.getElementById("ads-list");
+
+    if (myAds.length === 0) {
+        noAdsDiv.style.display = "block";
+        adsListDiv.style.display = "none";
+    } else {
+        noAdsDiv.style.display = "none";
+        adsListDiv.style.display = "block";
+    }
+
+    function goToAddAd() {
+        window.location.href = "ilan-ekle.html";
+    }
+</script>
+</body>
+</html>

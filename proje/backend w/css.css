@@ -1,0 +1,43 @@
+/* Tüm sayfa için genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+
+    /* Ortalamak için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* Ortadaki kutu */
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+
+    /* Hafif gölge */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    /* Köşeleri yumuşat */
+    border-radius: 8px;
+}
+
+/* Input alanları */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Buton */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+}
